@@ -4,6 +4,7 @@
     --lilas: #5f2c82;
 
 }
+
 body {
     background-image: linear-gradient(to top, var(--verde), var(--lilas));
 }
@@ -19,4 +20,10 @@ section#login > div#image {
 section#login > div#form {
     float: right;
     width: 50%;
+}
+div#form > h1 {
+    font-size: 2em;
+}
+div#form > p {
+    font-size: 1.2em;
 }
