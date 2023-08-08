@@ -100,7 +100,7 @@ div.field > span {
     padding: 4px;
 }
 div.field > input {
-    background-color: var(--verde-cla);
+    background-color: rgb(212, 230, 255);
     font-size: 1em;
     width: calc(100% - 45px);
     height: 100%;
