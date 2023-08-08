@@ -34,7 +34,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
     overflow: hidden;
 
     background-color: white;
@@ -45,6 +45,7 @@ section#login {
 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
     
 }
 section#login > div#image {
@@ -83,12 +84,35 @@ div.field >  label {
     display: none;
 }
 form > div.field {
+    border: 2px solid var(--lilas);
     margin: 5px 0px;
     background-color: var(--lilas);
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+div.field > span {
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+div.field > input {
+    background-color: var(--verde-cla);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+
+    border: none;
+    border-radius: 7px;
+    padding: 2px;
+    transform: translateY(-12px);
+}
+div.field > input:focus-within {
+    background-color: white;
+    border: none;
 }
 form > a.button {
     display: block;
