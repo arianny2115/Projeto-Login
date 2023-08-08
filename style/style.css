@@ -6,7 +6,10 @@
 
 :root {
     --verde: #49a09d;
+    --verde-esc:#2d6462;
+    --verde-cla: #6cd3cf;
     --lilas: #5f2c82;
+
 
 }
 * {
@@ -36,7 +39,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -61,4 +64,51 @@ div#form > h1 {
 }
 div#form > p {
     font-size: 0.8em;
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: var(--verde-esc);
+}
+div.field >  label {
+    display: none;
+}
+form > div.field {
+    margin: 5px 0px;
+    background-color: var(--lilas);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+}
+form > a.button {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: var(--verde-esc);
+    border: 1px solid var(--verde-esc);
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+form > a.button:hover {
+    background-color: var(--verde-cla);
+}
+form > a.button > span {
+    font-size: 0.8em;
+
 }
